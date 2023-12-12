@@ -4,32 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>
-      Frontend Mentor | Huddle landing page with single introductory section
-    </title>
+    <title>Challenge 1</title>
 
     <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url(images/bg-desktop.svg);
+        background-size: contain;
+        background-color: hsl(257,40%,49%);
+        background-repeat: no-repeat;
+        background-position: 25px;
+        height: 100vh;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+      .header{
+        width: 100%;
+        height: 10px;
+      }
+
+      .header img{
+        margin-top: 3%;
+        margin-left: 7%;
+      }
+      .content{
+        display: flex;
+        margin-top: 10.5%;
+        margin-left: 5%;
+      }
+      .leftContent img{
+        width: 100%;
+        height: 90%;
+      }
+      .rightContent{
+        font-family:sans-serif;
+        color: white;
+        margin-left: 5%;
+        margin-top: 1%;
+        
+      }
+      .rightContent h1{
+        font-size: 2.5rem;
+      }
+      .rightContent p{
+        color: #F7E6FF;
+        
+      }
+      .rightContent button{
+        width: 200px;
+        height: 60px;
+        border-radius: 40px;
+        border: none;
+        box-shadow: 2px 2px 3px rgb(36, 36, 36);
+        color: rgb(117, 24, 205);
+        font-size: 1.2rem;
+      }
+      .rightContent button:hover{
+        cursor: pointer;
+        background-color: blueviolet;
       }
     </style>
   </head>
   <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+    <header class="header">
+      <img src="images/logo.svg" alt="logo">
+    </header>
+    <section class="content">
+      <div class="leftContent">
+        <img src="images/illustration-mockups.svg" alt="mockups">
+      </div>
+      <div class="rightContent">
+        
+        <h1>Build The Community <br>
+           Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have <br>
+           a voice, but so does your audience. Create connections with <br>
+            your users as you engage in genuine discussion.</p>
+        <button>Register</button>
+       
+      </div>
+    </section>
+    
+    
+
+    <!--  Register-->
+    
   </body>
 </html>
